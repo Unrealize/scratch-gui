@@ -38,8 +38,103 @@ import wedo2ConnectionTipIconURL from './wedo2/wedo-button-illustration.svg';
 import boostIconURL from './boost/boost.png';
 import boostInsetIconURL from './boost/boost-small.svg';
 
+import dllChatBotIconURL from './chatbot/chatbot.png';
+import dllChatBotInsetIconURL from './chatbot/dll_logo.png';
+
+import dllAnimalClassificationIconURL from './animalClassification/animalClassification.png';
+import dllAnimalClassificationInsetIconURL from './animalClassification/dll_logo.png';
+
+import dllHomeAutomationIconURL from './homeAutomation/homeAutomation.png';
+import dllHomeAutomationInsetIconURL from './homeAutomation/dll_logo.png';
+
+import dllTicTacToeIconURL from './ticTacToe/ticTacToe.png';
+import dllTicTacToeInsetIconURL from './ticTacToe/dll_logo.png';
+
+import dllPowerBeetleIconURL from './powerBeetle/homeAutomation.png';
+import dllPowerBeetleInsetIconURL from './powerBeetle/dll_logo.png';
+
 export default [
-    {
+  {
+      name: 'DLL Home Automation',
+      extensionId: 'dllHomeAutomation',
+      collaborator: 'Dalton Learning Lab',
+      iconURL: dllHomeAutomationIconURL,
+      insetIconURL: dllHomeAutomationInsetIconURL,
+      description: (
+          <FormattedMessage
+              defaultMessage="DLL Home Automation"
+              description="Description for the 'DLL Home Automation' extension"
+              id="gui.extension.dllHomeAutomation.description"
+          />
+      ),
+      featured: true,
+      internetConnectionRequired: false
+  },
+  {
+      name: 'DLL Animal Classification',
+      extensionId: 'dllAnimalClassification',
+      collaborator: 'Dalton Learning Lab',
+      iconURL: dllAnimalClassificationIconURL,
+      insetIconURL: dllAnimalClassificationInsetIconURL,
+      description: (
+          <FormattedMessage
+              defaultMessage="DLL Animal Classification"
+              description="Description for the 'DLL Animal Classification' extension"
+              id="gui.extension.dllAnimalClassification.description"
+          />
+      ),
+      featured: true,
+      internetConnectionRequired: false
+  },
+  {
+      name: 'DLL ChatBot',
+      extensionId: 'dllChatBot',
+      collaborator: 'Dalton Learning Lab',
+      iconURL: dllChatBotIconURL,
+      insetIconURL: dllChatBotInsetIconURL,
+      description: (
+          <FormattedMessage
+              defaultMessage="DLL ChatBot"
+              description="Description for the 'DLL ChatBot' extension"
+              id="gui.extension.dllChatBot.description"
+          />
+      ),
+      featured: true,
+      internetConnectionRequired: false
+  },
+  {
+      name: 'Power Beetle Blink',
+      extensionId: 'dllBeetleBlink',
+      collaborator: 'DLL / Power Beetle',
+      iconURL: dllPowerBeetleIconURL,
+      insetIconURL: dllPowerBeetleInsetIconURL,
+      description: (
+          <FormattedMessage
+              defaultMessage="Power Beetle Blink"
+              description="Description for the 'Power Beetle Blink' extension"
+              id="gui.extension.dllBeetleBlink.description"
+          />
+      ),
+      featured: true,
+      internetConnectionRequired: true
+  },
+  {
+      name: 'DLL AI Tic-Tac-Toe',
+      extensionId: 'dllTicTacToe',
+      collaborator: 'Dalton Learning Lab',
+      iconURL: dllTicTacToeIconURL,
+      insetIconURL: dllTicTacToeInsetIconURL,
+      description: (
+          <FormattedMessage
+              defaultMessage="DLL AI Tic-Tac-Toe"
+              description="Description for the 'DLL AI Tic-Tac-Toe' extension"
+              id="gui.extension.dllTicTacToe.description"
+          />
+      ),
+      featured: true,
+      internetConnectionRequired: false
+  },
+  {
         name: (
             <FormattedMessage
                 defaultMessage="Music"
